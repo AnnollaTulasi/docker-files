@@ -1,0 +1,7 @@
+FROM almalinux:9
+RUN dnf install nginx -y
+#No functionality for EXPOSE,just for information
+EXPOSE 80
+ENV course="DevOps Course"\
+    duration="120hrs"
+CMD ["nginx", "-g", "daemon off;"]
