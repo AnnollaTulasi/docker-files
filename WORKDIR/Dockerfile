@@ -2,5 +2,5 @@ FROM almalinux:9
 RUN mkdir /tmp/work-dir-demo
 RUN cd /tmp/work-dir-demo
 RUN pwd
-RUN "Hello from work dir"> hello.txt
+RUN echo "Hello from work dir" > hello.txt
 CMD ["sleep","1000"]
